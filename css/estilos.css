@@ -241,6 +241,8 @@ nav {
 
 .sectionServicios {
     flex-direction: column;
+    border-top: 1px solid black;
+    padding: 3em 25px;
 }
 
 .sectionServicios_img {
@@ -249,31 +251,109 @@ nav {
 
 .sectionServicios_img img {
     width: 50%;
+    margin-bottom: 20px;
 }
 
+.servicios {
+    font-size: 2.5em;
+    padding-left: .3em;
+    margin-bottom: .5em;
+}
 
+.servicios_list li{
+    list-style-position: inside;
+    font-size: 1.5em;
+    margin: .5em;
+}
 
+/* -------- CONTACTO -------- */
+
+.sectionContacto {
+    border-top: 1px solid black;
+    padding: 3em 25px;
+}
+
+.sectionContacto_textos {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionContacto_txt1 {
+    margin-bottom: 10px;
+    background-color: black;
+    color: whitesmoke;
+    display: inline;
+    padding: 0 10px;
+}
+
+.sectionContacto_txt2 {
+    margin-bottom: 20px;
+    display: inline;
+    padding: 0 10px;
+}
+
+label, input, text {
+    display: block;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input {
+    height: 50px;
+}
+
+.grupo_botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-size: 1.5em;
+    color: whitesmoke;
+    background-color: black;
+    padding: 5px 10px;
+    border: none;
+}
+
+.sectionContacto_redes {
+    display: flex;
+    justify-content: space-around;
+    margin: 5em 0;
+}
+
+.sectionContacto_redes img {
+    width: 18%;
+}
+
+.redes_texto {
+    color: #808080;
+}
+
+/* *************** RESPONSIVE ***************** */
 @media (min-width: 769px) {
     * {
         font-size: 16px;
     }
+
+    /* -------- SERVICIOS -------- */
 
     .sectionServicios {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-    }
-
-    .servicios {
-        font-size: 2.5em;
-        padding-left: .3em;
-        margin-bottom: 1em;
+        padding: 3em 50px;
     }
     
     .sectionServicios_img {
         width: 40%;
-        text-align: center;
     }
     
     .sectionServicios_img img {
@@ -283,11 +363,57 @@ nav {
     .sectionServicios_texto {
         width: 40%;
     }
-    
-    .servicios_list li{
-        list-style-position: inside;
-        font-size: 1.5em;
-        margin: .5em;
+
+    /* -------- CONTACTO -------- */
+
+    .sectionContacto {
+        padding: 3em 50px;
+    }
+
+    .sectionContacto_textos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    label {
+        font-size: 1.3em;
+    }
+
+    .sectionContacto_txt1 {
+        font-size: 3em;
+    }
+
+    .sectionContacto_txt2 {
+        font-size: 2em;
+    }
+
+    .sectionContacto_titulos {
+        width: 50%;
+    }
+
+    .sectionContacto_txt1 {
+        margin-bottom: 20px;
+    }
+
+    .sectionContacto_form {
+        width: 50%;
+        padding: 0 50px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+    .sectionContacto_redes {    
+        margin: 10em 0;
+    }
+
+    .sectionContacto_redes img {
+        width: 10%;
+    }
+
+    .redes_texto {
+        font-size: 2em;
     }
 }
 
