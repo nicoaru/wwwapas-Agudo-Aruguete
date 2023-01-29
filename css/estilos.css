@@ -1,34 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700;900&display=swap');
+
+
+/* -------- RESETEO ---------- */
+/* -------- RESETEO ---------- */
+
 * {
     margin: 0px;
-    /* padding: 0px; */
+    padding: 0px;
     box-sizing: border-box;
 }
+
+
+
+
+/* -------- FONTS -------- */
+/* -------- FONTS -------- */
+
+.coinyRegular {
+    font-family: 'Coiny', cursive;
+    font-weight: 400;
+}
+
+.robotoRegular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.robotoBold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.robotoBlack {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+
+
+/* ---------   ----------- */
+
+
 
 body {
     background-color: #f2f2f2;
 }
 
+
+
+
+
+
 nav {
     display: flexbox;
     justify-content: space-between;
 }
-
-.coinyRegular {
-
-}
-
-.robotoRegular {
-
-}
-
-.robotoBold {
-
-}
-
-.robotoBlack {
-
-}
-
-
-
 
