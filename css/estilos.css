@@ -27,6 +27,11 @@ a {
 
 
 
+.amarillo {
+    background-color: #fcee21;
+}
+
+
 /* -------- FONTS -------- */
 /* -------- FONTS -------- */
 
@@ -133,3 +138,62 @@ body {
 
 
 
+
+nav {
+    display: flexbox;
+    justify-content: space-between;
+}
+
+/* -------- SERVICIOS -------- */
+
+.sectionServicios {
+    flex-direction: column;
+}
+
+.sectionServicios_img {
+    text-align: center;
+}
+
+.sectionServicios_img img {
+    width: 50%;
+}
+
+
+
+@media (min-width: 769px) {
+    * {
+        font-size: 16px;
+    }
+
+    .sectionServicios {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .servicios {
+        font-size: 2.5em;
+        padding-left: .3em;
+        margin-bottom: 1em;
+    }
+    
+    .sectionServicios_img {
+        width: 40%;
+        text-align: center;
+    }
+    
+    .sectionServicios_img img {
+        width: 70%;
+    }
+    
+    .sectionServicios_texto {
+        width: 40%;
+    }
+    
+    .servicios_list li{
+        list-style-position: inside;
+        font-size: 1.5em;
+        margin: .5em;
+    }
+}
