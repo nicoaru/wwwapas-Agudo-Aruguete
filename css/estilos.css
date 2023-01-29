@@ -4,12 +4,26 @@
 /* -------- RESETEO ---------- */
 /* -------- RESETEO ---------- */
 
+:root {
+
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-size: 12px;
+}
+@media (min-width: 769px) {
+    * {
+        font-size: 16px;
+    }
 }
 
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+}
 
 
 
@@ -41,6 +55,75 @@
 /* ---------   ----------- */
 
 
+/* --------- HEADER ----------- */
+/* --------- HEADER ----------- */
+header {
+    padding: 12px 25px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+header nav a {
+    font-size: 2.5em;
+    line-height: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+
+    display: none;  /*  Hasta que lo acomodoe para responsive  */
+}
+
+header nav ul li {
+    margin-left: 40px;
+}
+
+header nav ul li a {
+    font-size: 1em;
+}
+
+/* --- RESPONSIVE --- */
+@media (min-width: 769px) {
+    header {
+        padding: 25px 50px;
+
+    }
+    header nav ul {
+        display: flex; /*  Hasta que lo acomodoe para responsive  */
+    }
+}
+
+
+/* --------- ABOUT ----------- */
+/* --------- ABOUT ----------- */
+
+.sectionAbout {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 12px 25px;
+}
+
+.sectionAbout img {
+    width: 100%;
+}
+
+
+
+/* --- RESPONSIVE --- */
+@media (min-width: 769px) {
+
+}
+
+
+
+
 
 body {
     background-color: #f2f2f2;
@@ -49,10 +132,4 @@ body {
 
 
 
-
-
-nav {
-    display: flexbox;
-    justify-content: space-between;
-}
 
