@@ -3,29 +3,21 @@
 
 /* -------- RESETEO ---------- */
 /* -------- RESETEO ---------- */
-
-:root {
-
-}
-
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-size: 12px;
 }
-@media (min-width: 769px) {
-    * {
-        font-size: 16px;
-    }
+
+body {
+    background-color: #f2f2f2;
 }
 
 a {
     color: inherit; 
     text-decoration: inherit; 
 }
-
-
 
 .amarillo {
     background-color: #fcee21;
@@ -56,10 +48,6 @@ a {
 }
 
 
-
-/* ---------   ----------- */
-
-
 /* --------- HEADER ----------- */
 /* --------- HEADER ----------- */
 header {
@@ -70,37 +58,20 @@ header nav {
     justify-content: space-between;
     align-items: center;
 }
-
 header nav a {
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 100%;
 }
-
 header nav ul {
     display: flex;
     justify-content: end;
     list-style: none;
-
-    display: none;  /*  Hasta que lo acomodoe para responsive  */
 }
-
 header nav ul li {
-    margin-left: 40px;
+    margin-left: 15px;
 }
-
 header nav ul li a {
     font-size: 1em;
-}
-
-/* --- RESPONSIVE --- */
-@media (min-width: 769px) {
-    header {
-        padding: 25px 50px;
-
-    }
-    header nav ul {
-        display: flex; /*  Hasta que lo acomodoe para responsive  */
-    }
 }
 
 
@@ -113,6 +84,7 @@ header nav ul li a {
     flex-flow: column nowrap; */
     padding: 12px 25px;
 }
+
 .sectionAbout div {
     margin-bottom: 25px;
 }
@@ -124,13 +96,11 @@ header nav ul li a {
 .about1 h1 {
     font-size: 3em;
     line-height: 100%;
-
 }
 
 .about1 h2 {
     font-size: 2em;
     line-height: 100%;
-
 }
 
 .about1 h3 {  /* Acomodar esto para que vaya para abajo */
@@ -144,13 +114,13 @@ header nav ul li a {
 
 .about1 p {
     font-size: 1.5em;
-    line-height: 100%;
+    line-height: 125%;
     margin-top: 25px;
 }
 
 .about1 p span {
     font-size: 1em;
-    line-height: 100%;
+    line-height: 125%;
 } 
 
 .about2 h2 {
@@ -162,83 +132,15 @@ header nav ul li a {
 .about2 p {
     margin-top: 15px;
     font-size: 1.3em;
-    line-height: 100%;
+    line-height: 125%;
 }
 .about2 p span {
     margin-top: 15px;
     font-size: 1em;
-    line-height: 100%;
 }
 
-
-/* --- RESPONSIVE --- */
-@media (min-width: 769px) {
-    .sectionAbout {
-        padding: 25px 50px;
-    }
-    .about1 {
-        display: flex;
-        flex-flow: row nowrap;
-        gap: 25px;
-    } 
-    .about1>div {
-        flex-basis: 50%;
-    }
-    .about1 h1 {
-        font-size: 5.5em;
-    }
-    
-    .about1 h2 {
-        font-size: 3em;
-    }
-    .about1 P {
-        margin-top: 60px;
-    }
-
-    .about2 {
-        display: flex;
-        flex-flow: row nowrap;
-        gap: 25px 40px;
-    }
-
-    .about2 h2 {
-        font-size: 1.6em;
-        line-height: 100%;
-        width: max-content;
-    }
-    
-    .about2 p {
-        font-size: 1.3em;
-        line-height: 100%;
-    }
-    .about2 p span {
-        font-size: 1em;
-        line-height: 100%;
-    }
-
-
-}
-
-
-
-
-
-body {
-    background-color: #f2f2f2;
-}
-
-
-
-
-
-
-nav {
-    display: flexbox;
-    justify-content: space-between;
-}
 
 /* -------- SERVICIOS -------- */
-
 .sectionServicios {
     flex-direction: column;
     border-top: 1px solid black;
@@ -266,11 +168,15 @@ nav {
     margin: .5em;
 }
 
+.distinto {
+    width: max-content;
+}
+
 /* -------- CONTACTO -------- */
 
 .sectionContacto {
     border-top: 1px solid black;
-    padding: 3em 25px;
+    padding: 3em 25px 0 25px;
 }
 
 .sectionContacto_textos {
@@ -279,16 +185,21 @@ nav {
 }
 
 .sectionContacto_txt1 {
+    font-size: 1.6em;
+    line-height: 100%;
+    width: max-content;
     margin-bottom: 10px;
     background-color: black;
     color: whitesmoke;
-    display: inline;
     padding: 0 10px;
 }
 
+
 .sectionContacto_txt2 {
+    font-size: 1em;
+    line-height: 100%;
+    width: max-content;    
     margin-bottom: 20px;
-    display: inline;
     padding: 0 10px;
 }
 
@@ -325,25 +236,105 @@ button {
 .sectionContacto_redes {
     display: flex;
     justify-content: space-around;
-    margin: 5em 0;
+    margin-top: 3.5em;
+    margin-bottom: 3.5em;
 }
 
 .sectionContacto_redes img {
-    width: 18%;
+    width: 10%;
 }
 
 .redes_texto {
     color: #808080;
 }
 
+
+/* ------- FOOTER -------- */
+/* ------- FOOTER -------- */
+
+footer {
+    padding: 12px 25px;
+    background-color: #fcee21;
+    margin-bottom: 20px;
+}
+footer p {
+    display: inline;
+    font-size: 1.5em;
+}
+footer a {
+    display: inline;
+    margin-left: 50px;
+    font-size: 1.3em;
+}
+
+
+
+
 /* *************** RESPONSIVE ***************** */
+/* *************** RESPONSIVE ***************** */
+
 @media (min-width: 769px) {
     * {
         font-size: 16px;
     }
 
-    /* -------- SERVICIOS -------- */
+    /* -------- responsive HEADER -------- */
+    header {
+        padding: 25px 50px;
+    }
+    header nav a {
+        font-size: 2.5em;
+        line-height: 100%;
+    }
+    header nav ul li a {
+        font-size: 1em;
+    }
+    header nav ul li {
+        margin-left: 40px;
+    }
 
+
+    /* -------- responsive ABOUT -------- */
+    .sectionAbout {
+        padding: 25px 50px;
+    }
+    .about1 {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 25px;
+    } 
+    .about1>div {
+        flex-basis: 50%;
+    }
+    .about1 h1 {
+        font-size: 5.5em;
+    }
+    
+    .about1 h2 {
+        font-size: 3em;
+    }
+    .about1 P {
+        margin-top: 60px;
+    }
+    .about2 {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 25px 40px;
+    }
+    .about2 h2 {
+        font-size: 1.6em;
+        line-height: 100%;
+        width: max-content;
+    }
+    .about2 p {
+        font-size: 1.3em;
+    }
+    .about2 p span {
+        font-size: 1em;
+    }
+
+
+    /* -------- responsive SERVICIOS -------- */
     .sectionServicios {
         display: flex;
         flex-direction: row;
@@ -364,10 +355,10 @@ button {
         width: 40%;
     }
 
-    /* -------- CONTACTO -------- */
 
+    /* -------- responsive CONTACTO -------- */
     .sectionContacto {
-        padding: 3em 50px;
+        padding: 3em 50px 0 50px;
     }
 
     .sectionContacto_textos {
@@ -381,18 +372,16 @@ button {
 
     .sectionContacto_txt1 {
         font-size: 3em;
+        margin-bottom: 20px;
     }
 
     .sectionContacto_txt2 {
         font-size: 2em;
+        margin-top: 50px;
     }
 
     .sectionContacto_titulos {
         width: 50%;
-    }
-
-    .sectionContacto_txt1 {
-        margin-bottom: 20px;
     }
 
     .sectionContacto_form {
@@ -405,40 +394,19 @@ button {
     }
 
     .sectionContacto_redes {    
-        margin: 10em 0;
+        margin: 4em 0;
     }
 
     .sectionContacto_redes img {
         width: 10%;
     }
 
-    .redes_texto {
+    .redes_texto p {
         font-size: 2em;
     }
-}
 
 
-
-
-/* ------- FOOTER -------- */
-/* ------- FOOTER -------- */
-
-footer {
-    padding: 12px 25px;
-    background-color: #fcee21;
-    margin-bottom: 20px;
-}
-footer p {
-    display: inline;
-    font-size: 2em;
-}
-footer a {
-    display: inline;
-    margin-left: 50px;
-    font-size: 1.3em;
-}
-
-@media (min-width: 769px) {
+    /* -------- responsive CONTACTO -------- */
     footer {
         padding: 25px 50px;
     }
@@ -449,3 +417,7 @@ footer a {
         font-size: 1.3em;
     }
 }
+
+
+
+
